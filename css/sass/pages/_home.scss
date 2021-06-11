@@ -9,8 +9,7 @@
         z-index: 99;
         display: none;
 
-        @include prifixerAll(transition, all 10s ease-in-out);
-
+ 
         animation-name: fadeIn;
         animation-duration: .4s;
 

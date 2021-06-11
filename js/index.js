@@ -158,11 +158,15 @@ let scrollTop=document.querySelector('.scroll-top');
 
 let header = document.querySelector('header');
  function checkHeader(windowScroll){
+  console.log(windowScroll);
+
       let headeroffset = header.offsetTop;
+      console.log(headeroffset)
       if ((windowScroll > headeroffset)) {
         header.classList.add("sticky");
     }
-    else if (windowScroll < (headeroffset)) {
+    else if (windowScroll <= (headeroffset)) {
+      console.log('s');
         header.classList.remove("sticky");
 
     }

@@ -18,7 +18,9 @@
     @include media-breakpoint-down('md'){
         flex-direction: column;
         text-align: center;
-
+  .name {
+display: none;
+  }
     }
     span{
         display:inline-block;

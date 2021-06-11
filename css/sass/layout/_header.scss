@@ -111,13 +111,17 @@
 header{
     
     &.sticky{
-        position: sticky;
+        position: fixed;
         top: 0;
         background-color: #fff;
+       left: 0;
+       width: 100vw;
         z-index:$z-index-header ;
-         @include prifixerAll( box-shadow, 4px 4px 10px rgba(#000,.2));
+        @include prifixerAll( box-shadow, 4px 4px 10px rgba(#000,.2));
 
-    }
+        @include prifixerAll(transition, position .5s ease-in-out);
+         
+    } 
     .menus {
        
         color: var(--main-color);
@@ -173,8 +177,10 @@ header{
              display: none;
              @include media-breakpoint-down("md") {
                 display: block;
+                 
                }
         }
 
 }
 }
+ 
