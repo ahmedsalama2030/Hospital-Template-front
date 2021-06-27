@@ -58,6 +58,11 @@
             align-items: center;
             padding: .5rem 5rem;
             flex-grow: 1;
+            @include media-breakpoint-down("sm") {
+                padding:0;
+                            padding: .5rem 1rem;
+
+            }
 
             img {
                 margin: 0 1rem;
@@ -65,10 +70,7 @@
                 height: 100px;
                 padding: .5rem;
            @include prifixerAll(border-radius, 50%);
-          @include media-breakpoint-down("sm") {
-            width: 50px;
-                height: 50px;
-        }
+         
             }
 
             span {

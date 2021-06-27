@@ -60,7 +60,7 @@ footer{
              }
         }
         .contact{
-            flex: 1;
+            flex: 2;
             padding: 2rem;
             h2{
                 @extend %header;
@@ -69,7 +69,7 @@ footer{
                 padding: 0 1.2rem;
                 color: $black-500;
                 line-height: 1.9;
- 
+                   overflow-wrap: anywhere;
             }
         }
     }

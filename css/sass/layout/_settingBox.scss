@@ -1,5 +1,5 @@
 .setting-box{
-    text-transform: capitalize;
+     text-transform: capitalize;
     position: fixed;
     top:0;
     left:-200px;
@@ -52,6 +52,12 @@
    
 .lang{
     button.active{
+        background-color: $black-600;
+    }
+}
+  
+.lang{
+    a.active{
         background-color: $black-600;
     }
 }
